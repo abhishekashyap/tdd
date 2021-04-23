@@ -22,4 +22,10 @@ public class VowelCounterTest {
         VowelCounter aVowelCounter = new VowelCounter();
         assertEquals(9, aVowelCounter.count("aaeiiioou"));
     }
+
+    @Test
+    public void testMultipleVowelsAndConsonants(){
+        VowelCounter aVowelCounter = new VowelCounter();
+        assertEquals(3, aVowelCounter.count("hello world"));
+    }
 }
