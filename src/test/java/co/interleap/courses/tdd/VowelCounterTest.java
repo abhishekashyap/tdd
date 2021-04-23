@@ -28,4 +28,10 @@ public class VowelCounterTest {
         VowelCounter aVowelCounter = new VowelCounter();
         assertEquals(3, aVowelCounter.count("hello world"));
     }
+
+    @Test
+    public void testStringWithUppercaseAndLowercaseChar(){
+        VowelCounter aVowelCounter = new VowelCounter();
+        assertEquals(14, aVowelCounter.count("Almost before we KNew it, we had lEft the groUND"));
+    }
 }
